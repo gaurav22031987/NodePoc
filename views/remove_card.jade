@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    div.newemployee
+        form( method="post")
+            div
+                div
+                    span.label Suite :
+                    input(type="text", name="suite", id="editEmployeeTitle")
+                div
+                    span.label Card :
+                    input(type="text", name="card", id="editEmployeeName")
+                div#editEmployeeSubmit
+                    input(type="submit", value="Save")
+        a(href="/")!= "Back to DeckCard List"

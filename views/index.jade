@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    #employees
+        - each employee in DeckCardData
+          div.employee
+    div=DeckCardData.length
+    a(href="/removeCard/new")!= "Remove Card"
